@@ -1,0 +1,253 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(239, 239, 239);
+	background-image: url(./images/glitch.jpg);
+}
+
+.container {
+	position: relative;
+	display: flex;
+	height: 80vh;
+	border-radius: 15px;
+	box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.68);
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+	height: 80vh;
+	background-color: rgb(255, 255, 255);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.user-form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	width: 350px;
+}
+
+.form-row {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.form-row input[type='email'] {
+	background-color: #ffffff;
+	border: 1px solid #d6d9dc;
+	border-radius: 3px;
+	width: 100%;
+	padding: 7px;
+	font-size: 14px;
+}
+
+.form-row input[type='password'] {
+	background-color: #ffffff;
+	border: 1px solid #d6d9dc;
+	border-radius: 3px;
+	width: 100%;
+	padding: 7px;
+	font-size: 14px;
+}
+
+.form-row input[type='text'] {
+	background-color: #ffffff;
+	border: 1px solid #d6d9dc;
+	border-radius: 3px;
+	width: 100%;
+	padding: 7px;
+	font-size: 14px;
+}
+
+.form-row label {
+	margin-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	padding: 15px 15px;
+	margin-top: 25px;
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+
+.gif {
+	position: relative;
+	height: 80vh;
+	width: auto;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.png {
+	position: absolute;
+	width: 200px;
+	left: 135px;
+	top: 230px;
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.welcome p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+button {
+	align-self: flex-start;
+	border: none;
+	padding: 12px 45px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 5px;
+	background-color: rgb(64, 144, 64);
+	color: white;
+	margin-top: 0px;
+}
+
+button:hover {
+	background-color: rgb(75, 167, 75);
+	cursor: pointer;
+}
