@@ -193,6 +193,12 @@ body {
 	font-size: 14px;
 }
 
+.form-row input:focus {
+	outline: none;
+	border-color: blue;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.51);
+}
+
 .form-row label {
 	margin-bottom: 10px;
 	font-family: 'Roboto', sans-serif;
@@ -234,10 +240,10 @@ h1 {
 	font-weight: 300;
 }
 
-button {
+/* button {
 	align-self: flex-start;
 	border: none;
-	padding: 12px 45px;
+	padding: 10px 45px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 1rem;
@@ -245,9 +251,39 @@ button {
 	background-color: rgb(64, 144, 64);
 	color: white;
 	margin-top: 0px;
+    transition: 0.5s;
+	background-size: 200% auto;
 }
 
 button:hover {
 	background-color: rgb(75, 167, 75);
+	cursor: pointer;
+} */
+
+button {
+	background-image: linear-gradient(
+		to right,
+		rgb(64, 144, 64) 0%,
+		rgb(48, 106, 48) 51%,
+		rgb(93, 212, 93) 100%
+	);
+	align-self: flex-start;
+	border: none;
+	padding: 10px 45px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 5px;
+	background-color: rgb(64, 144, 64);
+	color: white;
+	margin-top: 0px;
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+button:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
 	cursor: pointer;
 }

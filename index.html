@@ -31,19 +31,20 @@
             <form class="user-form" action="">
                 <div class="form-row">
                     <label for="email">Email*</label>
-                    <input id="email" type="email" value="" placeholder="you@example.com">
+                    <input id="email" type="email" value="" placeholder="you@example.com" required>
                 </div>
                 <div class="form-row">
                     <label for="username">Username*</label>
-                    <input id="username" type="text" value="" placeholder="MetroBoomin">
+                    <input id="username" type="text" value="" placeholder="MetroBoomin" minlength="5" maxlength="12"
+                        required>
                 </div>
                 <div class="form-row">
                     <label for="user-password">Password*</label>
-                    <input id="user-password" type="password" value="">
+                    <input id="user-password" type="password" value="" required>
                 </div>
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password*</label>
-                    <input id="confirm-password" type="password" value="">
+                    <input id="confirm-password" type="password" value="" required>
                 </div>
 
                 <button>Sign Up</button>
