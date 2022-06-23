@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Sign-up form</title>
+    <!-- <script defer src="script.js"></script> -->
 </head>
 
 <body>
@@ -28,26 +29,28 @@
             </div>
 
 
-            <form class="user-form" action="">
+            <form id="form" class="user-form" action="/" method="GET">
                 <div class="form-row">
                     <label for="email">Email*</label>
                     <input id="email" type="email" value="" placeholder="you@example.com" required>
                 </div>
                 <div class="form-row">
                     <label for="username">Username*</label>
-                    <input id="username" type="text" value="" placeholder="MetroBoomin" minlength="5" maxlength="12"
-                        required>
+                    <input id="username" type="text" value="" placeholder="Must be between 5 and 12 characters"
+                        minlength="5" maxlength="12" required>
                 </div>
                 <div class="form-row">
                     <label for="user-password">Password*</label>
-                    <input id="user-password" type="password" value="" required>
+                    <input id="user-password" type="password" value="" minlength="6" maxlength="30" required>
                 </div>
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password*</label>
-                    <input id="confirm-password" type="password" value="" required>
+                    <input id="confirm-password" type="password" value="" minlength="6" maxlength="30" required>
                 </div>
 
-                <button>Sign Up</button>
+                <div id="error"></div>
+
+                <button type="submit">Sign Up</button>
 
             </form>
 

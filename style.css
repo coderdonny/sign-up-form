@@ -149,6 +149,13 @@ body {
 	background-color: rgb(255, 255, 255);
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(223, 223, 255, 0.25) 0%,
+		rgba(41, 123, 210, 0.25) 100%
+	);
 }
 
 .user-form {
@@ -167,42 +174,87 @@ body {
 }
 
 .form-row input[type='email'] {
-	background-color: #ffffff;
-	border: 1px solid #d6d9dc;
+	/* background: rgba(255, 255, 255, 0.389); */
+	background-color: rgba(255, 255, 255, 0.169);
+	color: white;
+	border: none;
 	border-radius: 3px;
 	width: 100%;
+	height: 25px;
 	padding: 7px;
-	font-size: 14px;
+	font-size: 16px;
+	outline: none;
+}
+
+.form-row input[type='password']:invalid {
+	border-style: solid;
+	border-width: 2px;
+	outline: red;
+	border: none;
+	border-bottom: 2px solid red;
+	/* background-color: red; */
+	content: 'error';
+}
+
+.form-row input[type='password']:valid {
+	border-style: solid;
+	border-width: 2px;
+	outline: rgb(13, 255, 0);
+	border: none;
+	border-bottom: 2px solid green;
+	/* background-color: red; */
+	content: 'error';
 }
 
 .form-row input[type='password'] {
-	background-color: #ffffff;
-	border: 1px solid #d6d9dc;
+	background-color: rgba(255, 255, 255, 0.169);
+	color: white;
+	border: none;
 	border-radius: 3px;
 	width: 100%;
+	height: 25px;
 	padding: 7px;
-	font-size: 14px;
+	font-size: 16px;
+	outline: none;
 }
 
 .form-row input[type='text'] {
-	background-color: #ffffff;
-	border: 1px solid #d6d9dc;
+	background-color: rgba(255, 255, 255, 0.169);
+	color: white;
+	border: none;
 	border-radius: 3px;
 	width: 100%;
+	height: 25px;
 	padding: 7px;
-	font-size: 14px;
+	font-size: 16px;
+	outline: none;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(179, 179, 179);
+	opacity: 1; /* Firefox */
+}
+
+:focus::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(255, 255, 255);
+	opacity: 1; /* Firefox */
 }
 
 .form-row input:focus {
+	background-color: rgba(255, 255, 255, 0.449);
+	color: white;
 	outline: none;
-	border-color: blue;
-	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.51);
+	border-color: rgb(136, 136, 255);
+	box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.51);
 }
 
 .form-row label {
 	margin-bottom: 10px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	color: white;
 }
 
 h1 {
@@ -211,6 +263,11 @@ h1 {
 	font-size: 2rem;
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
+	color: white;
+}
+
+a {
+	color: rgb(131, 131, 255);
 }
 
 .gif {
@@ -238,6 +295,7 @@ h1 {
 .welcome p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	color: white;
 }
 
 /* button {
@@ -264,7 +322,7 @@ button {
 	background-image: linear-gradient(
 		to right,
 		rgb(64, 144, 64) 0%,
-		rgb(48, 106, 48) 51%,
+		rgb(59, 129, 59) 51%,
 		rgb(93, 212, 93) 100%
 	);
 	align-self: flex-start;
@@ -286,4 +344,13 @@ button:hover {
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
+	color: rgb(251, 251, 251);
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.56);
+}
+
+#error {
+	color: red;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 0.8rem;
 }
